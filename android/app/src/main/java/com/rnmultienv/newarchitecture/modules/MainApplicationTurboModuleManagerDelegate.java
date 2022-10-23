@@ -1,4 +1,4 @@
-package com.rnmultienv.newarchitecture.modules;
+package com.quocvn.rnmultienv.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

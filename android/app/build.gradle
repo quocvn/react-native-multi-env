@@ -1,4 +1,13 @@
 apply plugin: "com.android.application"
+project.ext.envConfigFiles = [
+   devrelease: ".env.dev",
+   devdebug: ".env.dev",
+   stagingrelease: ".env.stage",
+   stagingdebug: ".env.stage",
+   productiondebug: ".env.production",
+   productionrelease: ".env.production"
+]
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
@@ -131,11 +140,33 @@ def reactNativeArchitectures() {
 
 android {
     ndkVersion rootProject.ext.ndkVersion
-
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    flavorDimensions "default"
+    productFlavors {
+        dev {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationIdSuffix ".dev"
+            // applicationId "com.quocvn.rnmultienv.dev"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
+        }
+        staging {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationIdSuffix ".staging"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
+        }
+        production {
+            minSdkVersion rootProject.ext.minSdkVersion
+            // applicationId "com.quocvn.rnmultienv"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
+        }
+    }
+
     defaultConfig {
-        applicationId "com.rnmultienv"
+        applicationId "com.quocvn.rnmultienv"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -221,6 +252,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            matchingFallbacks = ['debug', 'release'] // <- add this line
         }
         release {
             // Caution! In production, you need to generate your own keystore file.

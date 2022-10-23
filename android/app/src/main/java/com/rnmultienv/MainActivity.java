@@ -1,4 +1,4 @@
-package com.rnmultienv;
+package com.quocvn.rnmultienv;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

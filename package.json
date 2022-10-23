@@ -7,11 +7,18 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "android:dev": "react-native run-android --variant=devDebug --appIdSuffix=dev",
+    "android:dev-release": "react-native run-android --variant=devRelease",
+    "android:staging": "react-native run-android --variant=stagingDebug --appIdSuffix=staging",
+    "android:staging-release": "react-native run-android --variant=stagingRelease",
+    "android:prod": "react-native run-android --variant=productionDebug",
+    "android:prod-release": "react-native run-android --variant=productionRelease"
   },
   "dependencies": {
     "react": "18.1.0",
-    "react-native": "0.70.3"
+    "react-native": "0.70.3",
+    "react-native-config": "^1.4.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
