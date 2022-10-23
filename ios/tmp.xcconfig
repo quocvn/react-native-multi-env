@@ -1,0 +1,2 @@
+ENV=Develop
+API_URL=https:/$()/api.quocvn.develop

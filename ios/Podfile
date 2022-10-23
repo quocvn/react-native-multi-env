@@ -26,10 +26,18 @@ target 'RNMultiEnv' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'RNMultiEnvTests' do
+  target 'RNMultiEnv-Dev' do
     inherit! :complete
-    # Pods for testing
   end
+
+  target 'RNMultiEnv-Stage' do
+    inherit! :complete
+  end
+
+  # target 'RNMultiEnvTests' do
+  #   inherit! :complete
+  #   # Pods for testing
+  # end
 
   post_install do |installer|
     react_native_post_install(

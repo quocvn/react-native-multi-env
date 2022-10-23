@@ -7,59 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* RNMultiEnvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNMultiEnvTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-RNMultiEnv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNMultiEnv.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-RNMultiEnv-RNMultiEnvTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNMultiEnv-RNMultiEnvTests.a */; };
+		170658632905260100AA44E0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		170658642905260100AA44E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		170658682905260100AA44E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		170658692905260100AA44E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		170658762905261300AA44E0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		170658772905261300AA44E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1706587B2905261300AA44E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		1706587C2905261300AA44E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		219358B23BCAE22346E0C469 /* libPods-RNMultiEnv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNMultiEnv.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		E8A5525D9561BEDCAC7B6558 /* libPods-RNMultiEnv-RNMultiEnv-Stage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8697764F7263BDF71828EC /* libPods-RNMultiEnv-RNMultiEnv-Stage.a */; };
+		F473BB138C7136ED77511DB5 /* libPods-RNMultiEnv-RNMultiEnv-Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B0B70A003D60893F8EEE5 /* libPods-RNMultiEnv-RNMultiEnv-Dev.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = RNMultiEnv;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* RNMultiEnvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNMultiEnvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RNMultiEnvTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNMultiEnvTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* RNMultiEnv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNMultiEnv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		042FB1C03EF33AE614C46738 /* Pods-RNMultiEnv-RNMultiEnv-Stage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv-RNMultiEnv-Stage.debug.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Stage/Pods-RNMultiEnv-RNMultiEnv-Stage.debug.xcconfig"; sourceTree = "<group>"; };
+		073B0B70A003D60893F8EEE5 /* libPods-RNMultiEnv-RNMultiEnv-Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNMultiEnv-RNMultiEnv-Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* QuocVN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuocVN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RNMultiEnv/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RNMultiEnv/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNMultiEnv/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNMultiEnv/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNMultiEnv/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNMultiEnv-RNMultiEnvTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNMultiEnv-RNMultiEnvTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-RNMultiEnv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv.debug.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-RNMultiEnv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv.release.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv.release.xcconfig"; sourceTree = "<group>"; };
+		170658702905260100AA44E0 /* QuocVN_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuocVN_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		170658712905260200AA44E0 /* RNMultiEnv Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RNMultiEnv Dev-Info.plist"; path = "/Users/quocnguyen/Quoc/REACT_NATIVE/RNMultiEnv/ios/RNMultiEnv Dev-Info.plist"; sourceTree = "<absolute>"; };
+		170658832905261300AA44E0 /* QuocVN_Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuocVN_Stage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		170658842905261300AA44E0 /* RNMultiEnv Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RNMultiEnv Stage-Info.plist"; path = "/Users/quocnguyen/Quoc/REACT_NATIVE/RNMultiEnv/ios/RNMultiEnv Stage-Info.plist"; sourceTree = "<absolute>"; };
+		170658852905419F00AA44E0 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		179207B541D0232B878ECD42 /* Pods-RNMultiEnv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv.release.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv.release.xcconfig"; sourceTree = "<group>"; };
+		27809F5F782959E2588AFB3D /* Pods-RNMultiEnvCommonPods-RNMultiEnvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnvCommonPods-RNMultiEnvTests.debug.xcconfig"; path = "Target Support Files/Pods-RNMultiEnvCommonPods-RNMultiEnvTests/Pods-RNMultiEnvCommonPods-RNMultiEnvTests.debug.xcconfig"; sourceTree = "<group>"; };
+		31AF23B9AD1666343062C678 /* Pods-RNMultiEnvCommonPods-RNMultiEnvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnvCommonPods-RNMultiEnvTests.release.xcconfig"; path = "Target Support Files/Pods-RNMultiEnvCommonPods-RNMultiEnvTests/Pods-RNMultiEnvCommonPods-RNMultiEnvTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNMultiEnv-RNMultiEnvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv-RNMultiEnvTests.debug.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv-RNMultiEnvTests/Pods-RNMultiEnv-RNMultiEnvTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RNMultiEnv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNMultiEnv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8697764F7263BDF71828EC /* libPods-RNMultiEnv-RNMultiEnv-Stage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNMultiEnv-RNMultiEnv-Stage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNMultiEnv/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNMultiEnv-RNMultiEnvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv-RNMultiEnvTests.release.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv-RNMultiEnvTests/Pods-RNMultiEnv-RNMultiEnvTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C42A1365C0292F2043E4E6A /* Pods-RNMultiEnv-RNMultiEnv-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv-RNMultiEnv-Dev.debug.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Dev/Pods-RNMultiEnv-RNMultiEnv-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		B863C1BB01CB1B59571941EC /* Pods-RNMultiEnv-RNMultiEnv-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv-RNMultiEnv-Dev.release.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Dev/Pods-RNMultiEnv-RNMultiEnv-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		BB74B6C780BFA0B8E95941A0 /* Pods-RNMultiEnv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv.debug.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv.debug.xcconfig"; sourceTree = "<group>"; };
+		C8ACD4DFA6FA33AF0272362E /* Pods-RNMultiEnv-RNMultiEnv-Stage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMultiEnv-RNMultiEnv-Stage.release.xcconfig"; path = "Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Stage/Pods-RNMultiEnv-RNMultiEnv-Stage.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F4C2298DDB5A60EA8FF6C93B /* libPods-RNMultiEnv-RNMultiEnvTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNMultiEnv-RNMultiEnvTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7699B88040F8A987B510C191 /* libPods-RNMultiEnv-RNMultiEnvTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-RNMultiEnv.a in Frameworks */,
+				219358B23BCAE22346E0C469 /* libPods-RNMultiEnv.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170658652905260100AA44E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F473BB138C7136ED77511DB5 /* libPods-RNMultiEnv-RNMultiEnv-Dev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170658782905261300AA44E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8A5525D9561BEDCAC7B6558 /* libPods-RNMultiEnv-RNMultiEnv-Stage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +119,9 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-RNMultiEnv.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNMultiEnv-RNMultiEnvTests.a */,
+				F4C2298DDB5A60EA8FF6C93B /* libPods-RNMultiEnv-RNMultiEnvTests.a */,
+				073B0B70A003D60893F8EEE5 /* libPods-RNMultiEnv-RNMultiEnv-Dev.a */,
+				7F8697764F7263BDF71828EC /* libPods-RNMultiEnv-RNMultiEnv-Stage.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,12 +136,15 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				170658852905419F00AA44E0 /* Config.xcconfig */,
 				13B07FAE1A68108700A75B9A /* RNMultiEnv */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNMultiEnvTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				170658712905260200AA44E0 /* RNMultiEnv Dev-Info.plist */,
+				170658842905261300AA44E0 /* RNMultiEnv Stage-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -131,8 +154,9 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* RNMultiEnv.app */,
-				00E356EE1AD99517003FC87E /* RNMultiEnvTests.xctest */,
+				13B07F961A680F5B00A75B9A /* QuocVN.app */,
+				170658702905260100AA44E0 /* QuocVN_Dev.app */,
+				170658832905261300AA44E0 /* QuocVN_Stage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +164,16 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-RNMultiEnv.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-RNMultiEnv.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-RNMultiEnv-RNMultiEnvTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-RNMultiEnv-RNMultiEnvTests.release.xcconfig */,
+				8C42A1365C0292F2043E4E6A /* Pods-RNMultiEnv-RNMultiEnv-Dev.debug.xcconfig */,
+				B863C1BB01CB1B59571941EC /* Pods-RNMultiEnv-RNMultiEnv-Dev.release.xcconfig */,
+				042FB1C03EF33AE614C46738 /* Pods-RNMultiEnv-RNMultiEnv-Stage.debug.xcconfig */,
+				C8ACD4DFA6FA33AF0272362E /* Pods-RNMultiEnv-RNMultiEnv-Stage.release.xcconfig */,
+				27809F5F782959E2588AFB3D /* Pods-RNMultiEnvCommonPods-RNMultiEnvTests.debug.xcconfig */,
+				31AF23B9AD1666343062C678 /* Pods-RNMultiEnvCommonPods-RNMultiEnvTests.release.xcconfig */,
+				BB74B6C780BFA0B8E95941A0 /* Pods-RNMultiEnv.debug.xcconfig */,
+				179207B541D0232B878ECD42 /* Pods-RNMultiEnv.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,39 +181,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* RNMultiEnvTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNMultiEnvTests" */;
-			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
-			);
-			name = RNMultiEnvTests;
-			productName = RNMultiEnvTests;
-			productReference = 00E356EE1AD99517003FC87E /* RNMultiEnvTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		13B07F861A680F5B00A75B9A /* RNMultiEnv */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNMultiEnv" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				E0E16CA57C5F4E0408B1DBCC /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				F5B8B2E716106F64B1BE1AFD /* [CP] Embed Pods Frameworks */,
+				CEEBE4BA6BB6946F2AB197F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,7 +200,51 @@
 			);
 			name = RNMultiEnv;
 			productName = RNMultiEnv;
-			productReference = 13B07F961A680F5B00A75B9A /* RNMultiEnv.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* QuocVN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1706585F2905260100AA44E0 /* RNMultiEnv-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1706586D2905260100AA44E0 /* Build configuration list for PBXNativeTarget "RNMultiEnv-Dev" */;
+			buildPhases = (
+				D483AF174BF6EDE68C614DD3 /* [CP] Check Pods Manifest.lock */,
+				170658612905260100AA44E0 /* Start Packager */,
+				170658622905260100AA44E0 /* Sources */,
+				170658652905260100AA44E0 /* Frameworks */,
+				170658672905260100AA44E0 /* Resources */,
+				1706586A2905260100AA44E0 /* Bundle React Native code and images */,
+				E714270EF09D77E34C753E26 /* [CP] Embed Pods Frameworks */,
+				49BA9C10B57C60F97CC37275 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNMultiEnv-Dev";
+			productName = RNMultiEnv;
+			productReference = 170658702905260100AA44E0 /* QuocVN_Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		170658722905261300AA44E0 /* RNMultiEnv-Stage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 170658802905261300AA44E0 /* Build configuration list for PBXNativeTarget "RNMultiEnv-Stage" */;
+			buildPhases = (
+				DE5407E7D53D7AE17D37EDAB /* [CP] Check Pods Manifest.lock */,
+				170658742905261300AA44E0 /* Start Packager */,
+				170658752905261300AA44E0 /* Sources */,
+				170658782905261300AA44E0 /* Frameworks */,
+				1706587A2905261300AA44E0 /* Resources */,
+				1706587D2905261300AA44E0 /* Bundle React Native code and images */,
+				D8B1F1B8541F464587842C30 /* [CP] Embed Pods Frameworks */,
+				446BE7EC119AA6155EDB83AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNMultiEnv-Stage";
+			productName = RNMultiEnv;
+			productReference = 170658832905261300AA44E0 /* QuocVN_Stage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -202,10 +255,6 @@
 			attributes = {
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
 					};
@@ -225,25 +274,37 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNMultiEnv */,
-				00E356ED1AD99517003FC87E /* RNMultiEnvTests */,
+				1706585F2905260100AA44E0 /* RNMultiEnv-Dev */,
+				170658722905261300AA44E0 /* RNMultiEnv-Stage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170658672905260100AA44E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170658682905260100AA44E0 /* LaunchScreen.storyboard in Resources */,
+				170658692905260100AA44E0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1706587A2905261300AA44E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1706587B2905261300AA44E0 /* LaunchScreen.storyboard in Resources */,
+				1706587C2905261300AA44E0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,24 +327,128 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		170658612905260100AA44E0 /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = "Start Packager";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-frameworks.sh\"\n";
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		1706586A2905260100AA44E0 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		170658742905261300AA44E0 /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1706587D2905261300AA44E0 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		446BE7EC119AA6155EDB83AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Stage/Pods-RNMultiEnv-RNMultiEnv-Stage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Stage/Pods-RNMultiEnv-RNMultiEnv-Stage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Stage/Pods-RNMultiEnv-RNMultiEnv-Stage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49BA9C10B57C60F97CC37275 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Dev/Pods-RNMultiEnv-RNMultiEnv-Dev-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Dev/Pods-RNMultiEnv-RNMultiEnv-Dev-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Dev/Pods-RNMultiEnv-RNMultiEnv-Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEEBE4BA6BB6946F2AB197F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D483AF174BF6EDE68C614DD3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,14 +463,53 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNMultiEnv-RNMultiEnvTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RNMultiEnv-RNMultiEnv-Dev-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		D8B1F1B8541F464587842C30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Stage/Pods-RNMultiEnv-RNMultiEnv-Stage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Stage/Pods-RNMultiEnv-RNMultiEnv-Stage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Stage/Pods-RNMultiEnv-RNMultiEnv-Stage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE5407E7D53D7AE17D37EDAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNMultiEnv-RNMultiEnv-Stage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E16CA57C5F4E0408B1DBCC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,55 +531,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		E714270EF09D77E34C753E26 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnvTests/Pods-RNMultiEnv-RNMultiEnvTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Dev/Pods-RNMultiEnv-RNMultiEnv-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnvTests/Pods-RNMultiEnv-RNMultiEnvTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Dev/Pods-RNMultiEnv-RNMultiEnv-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnvTests/Pods-RNMultiEnv-RNMultiEnvTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnv-Dev/Pods-RNMultiEnv-RNMultiEnv-Dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		F5B8B2E716106F64B1BE1AFD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnvTests/Pods-RNMultiEnv-RNMultiEnvTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnvTests/Pods-RNMultiEnv-RNMultiEnvTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv-RNMultiEnvTests/Pods-RNMultiEnv-RNMultiEnvTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNMultiEnv/Pods-RNMultiEnv-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -400,14 +587,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E356F31AD99517003FC87E /* RNMultiEnvTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,71 +596,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		170658622905260100AA44E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170658632905260100AA44E0 /* AppDelegate.mm in Sources */,
+				170658642905260100AA44E0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170658752905261300AA44E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170658762905261300AA44E0 /* AppDelegate.mm in Sources */,
+				170658772905261300AA44E0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* RNMultiEnv */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-RNMultiEnv-RNMultiEnvTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNMultiEnvTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-					"$(inherited)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNMultiEnv.app/RNMultiEnv";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-RNMultiEnv-RNMultiEnvTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = RNMultiEnvTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-					"$(inherited)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNMultiEnv.app/RNMultiEnv";
-			};
-			name = Release;
-		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RNMultiEnv.debug.xcconfig */;
+			baseConfigurationReference = BB74B6C780BFA0B8E95941A0 /* Pods-RNMultiEnv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -497,8 +635,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RNMultiEnv;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quocvn.rnme;
+				PRODUCT_NAME = QuocVN;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -507,7 +645,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RNMultiEnv.release.xcconfig */;
+			baseConfigurationReference = 179207B541D0232B878ECD42 /* Pods-RNMultiEnv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -522,8 +660,108 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RNMultiEnv;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quocvn.rnme;
+				PRODUCT_NAME = QuocVN;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		1706586E2905260100AA44E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C42A1365C0292F2043E4E6A /* Pods-RNMultiEnv-RNMultiEnv-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "RNMultiEnv Dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quocvn.rnme-dev";
+				PRODUCT_NAME = QuocVN_Dev;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1706586F2905260100AA44E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B863C1BB01CB1B59571941EC /* Pods-RNMultiEnv-RNMultiEnv-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RNMultiEnv Dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quocvn.rnme-dev";
+				PRODUCT_NAME = QuocVN_Dev;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		170658812905261300AA44E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042FB1C03EF33AE614C46738 /* Pods-RNMultiEnv-RNMultiEnv-Stage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "RNMultiEnv Stage-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quocvn.rnme-stage";
+				PRODUCT_NAME = QuocVN_Stage;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		170658822905261300AA44E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8ACD4DFA6FA33AF0272362E /* Pods-RNMultiEnv-RNMultiEnv-Stage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RNMultiEnv Stage-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quocvn.rnme-stage";
+				PRODUCT_NAME = QuocVN_Stage;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -669,20 +907,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNMultiEnvTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNMultiEnv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1706586D2905260100AA44E0 /* Build configuration list for PBXNativeTarget "RNMultiEnv-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1706586E2905260100AA44E0 /* Debug */,
+				1706586F2905260100AA44E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		170658802905261300AA44E0 /* Build configuration list for PBXNativeTarget "RNMultiEnv-Stage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170658812905261300AA44E0 /* Debug */,
+				170658822905261300AA44E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
