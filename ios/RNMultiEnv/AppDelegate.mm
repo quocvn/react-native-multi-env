@@ -1,4 +1,6 @@
 #import "AppDelegate.h"
+#import <Firebase.h>
+#import "RNFBMessagingModule.h"
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
@@ -31,9 +33,14 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [FIRApp configure]; // Config react-native-firebase
   RCTAppSetupPrepareApp(application);
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+  // Add new for firebase config
+  NSDictionary *appProperties = [RNFBMessagingModule addCustomPropsToUserProps:nil withLaunchOptions:launchOptions];
+  // Find the `RCTRootView` instance and update the `initialProperties` with your `appProperties` instance
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"RNMultiEnv" initialProperties:appProperties];
 
 #if RCT_NEW_ARCH_ENABLED
   _contextContainer = std::make_shared<facebook::react::ContextContainer const>();
@@ -43,8 +50,8 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   bridge.surfacePresenter = _bridgeAdapter.surfacePresenter;
 #endif
 
-  NSDictionary *initProps = [self prepareInitialProps];
-  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"RNMultiEnv", initProps);
+//  NSDictionary *initProps = [self prepareInitialProps];
+//  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"RNMultiEnv", initProps);
 
   if (@available(iOS 13.0, *)) {
     rootView.backgroundColor = [UIColor systemBackgroundColor];
