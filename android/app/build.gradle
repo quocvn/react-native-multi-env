@@ -1,11 +1,12 @@
 apply plugin: "com.android.application"
+apply plugin: "com.google.gms.google-services"
 project.ext.envConfigFiles = [
-   devrelease: ".env.dev",
-   devdebug: ".env.dev",
-   stagingrelease: ".env.stage",
-   stagingdebug: ".env.stage",
-   productiondebug: ".env.production",
-   productionrelease: ".env.production"
+   devRelease: ".env.dev",
+   devDebug: ".env.dev",
+   stagingRelease: ".env.stage",
+   stagingDebug: ".env.stage",
+   productionDebug: ".env.production",
+   productionRelease: ".env.production"
 ]
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
@@ -260,6 +261,24 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    sourceSets {
+        dev {
+            res {
+                srcDirs 'src/dev/res'
+            }
+            // java {
+            //     srcDirs 'src/dev/java'
+            // }
+        }
+        staging {
+            res {
+                srcDirs 'src/staging/res'
+            }
+            // java {
+            //     srcDirs 'src/staging/java'
+            // }
         }
     }
 
