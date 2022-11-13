@@ -139,32 +139,16 @@ def reactNativeArchitectures() {
     return value ? value.split(",") : ["armeabi-v7a", "x86", "x86_64", "arm64-v8a"]
 }
 
+// keystore.properties file, in the rootProject folder.
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+// Initialize a new Properties() object called keystoreProperties.
+def keystoreProperties = new Properties()
+// Load your keystore.properties file into the keystoreProperties object.
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
     ndkVersion rootProject.ext.ndkVersion
     compileSdkVersion rootProject.ext.compileSdkVersion
-
-    flavorDimensions "default"
-    productFlavors {
-        dev {
-            minSdkVersion rootProject.ext.minSdkVersion
-            applicationIdSuffix ".dev"
-            // applicationId "com.quocvn.rnmultienv.dev"
-            targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
-        }
-        staging {
-            minSdkVersion rootProject.ext.minSdkVersion
-            applicationIdSuffix ".staging"
-            targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
-        }
-        production {
-            minSdkVersion rootProject.ext.minSdkVersion
-            // applicationId "com.quocvn.rnmultienv"
-            targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
-        }
-    }
 
     defaultConfig {
         applicationId "com.quocvn.rnmultienv"
@@ -249,16 +233,71 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        devSigning {
+            // if (project.hasProperty('DEV_STORE_FILE')) {
+            //     storeFile file(DEV_STORE_FILE)
+            //     keyAlias DEV_KEY_ALIAS
+            //     storePassword DEV_STORE_PASSWORD
+            //     keyPassword DEV_KEY_PASSWORD
+            // }
+            keyAlias keystoreProperties['keyAliasForDev']
+            keyPassword keystoreProperties['keyPasswordForDev']
+            storeFile file(keystoreProperties['storeFileForDev'])
+            storePassword keystoreProperties['storePasswordForDev']
+        }
+        stageSigning {
+            keyAlias keystoreProperties['keyAliasForStage']
+            keyPassword keystoreProperties['keyPasswordForStage']
+            storeFile file(keystoreProperties['storeFileForStage'])
+            storePassword keystoreProperties['storePasswordForStage']
+        }
+        prodSigning {
+            keyAlias keystoreProperties['keyAliasForProd']
+            keyPassword keystoreProperties['keyPasswordForProd']
+            storeFile file(keystoreProperties['storeFileForProd'])
+            storePassword keystoreProperties['storePasswordForProd']
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        dev {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationIdSuffix ".dev"
+            // applicationId "com.quocvn.rnmultienv.dev"
+            // applicationId project.env.get("ANDROID_APP_ID")
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            // versionCode project.env.get("ANDROID_APP_VERSION_CODE").toInteger()
+            // versionName project.env.get("ANDROID_APP_VERSION_NAME")
+            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
+            signingConfig signingConfigs.devSigning
+        }
+        staging {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationIdSuffix ".staging"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
+            signingConfig signingConfigs.stageSigning
+        }
+        production {
+            minSdkVersion rootProject.ext.minSdkVersion
+            // applicationId "com.quocvn.rnmultienv"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.quocvn.rnmultienv"
+            signingConfig signingConfigs.prodSigning
+        }
     }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
             matchingFallbacks = ['debug', 'release'] // <- add this line
+            // applicationIdSuffix ".debug"
+            // versionNameSuffix "-debug"
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            // signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
